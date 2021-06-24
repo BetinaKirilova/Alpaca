@@ -1,0 +1,454 @@
+@media only screen and (min-width: 768px) {
+  .slider-frame {
+    position: absolute;
+    top: 0;
+    margin-left: 50%;
+    margin-bottom: 0;
+    width: 50%;
+    height: 100vh;
+    clip-path: polygon(50% 0%, 100% 0, 100% 37%, 69% 100%, 0 100%);
+
+    background-image: url("/Photos/HomeSlider/first.jpg");
+    background-size: cover;
+    animation: myanimation 10s infinite;
+  }
+  @keyframes myanimation {
+    20% {
+      background-image: url("/Photos/HomeSlider/second.jpg");
+    }
+    40% {
+      background-image: url("/Photos/HomeSlider/third.jpg");
+    }
+    60% {
+      background-image: url("/Photos/HomeSlider/fourth.jpg");
+    }
+    80% {
+      background-image: url("/Photos/HomeSlider/fifth.jpg");
+    }
+  }
+
+  .tag {
+    width: 55vw;
+  }
+
+  .mySlides h4 {
+    font-size: 4vw;
+    font-family: Bodoni MT;
+    color: black;
+  }
+
+  .mySlides p {
+    font-size: 2vw;
+    font-family: Bodoni MT;
+    color: black;
+  }
+  span {
+    color: #fd8606;
+  }
+
+  .mySlides {
+    position: relative;
+    margin-left: 5vw;
+    top: -5vh;
+  }
+  .mySlides img {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 0.3vw;
+    padding-top: 0.3vw;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 2vw;
+    user-select: none;
+    border: black 3px solid;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+  }
+
+  .prev {
+    position: relative;
+    top: -2vh;
+    left: 5vw;
+  }
+  .next {
+    position: relative;
+    top: -2vh;
+    left: 6vw;
+  }
+
+  .prev:hover {
+    border: #fd8606 3px solid;
+    color: #fd8606;
+  }
+  .next:hover {
+    border: #fd8606 3px solid;
+    color: #fd8606;
+  }
+  .location img {
+    width: 4vw;
+    height: 8vh;
+  }
+
+  .location p {
+    font-family: Bodoni MT;
+    font-size: 2vw;
+  }
+
+  .location {
+    position: relative;
+    margin-left: 5vw;
+    top: 5vh;
+  }
+  footer {
+    position: absolute;
+    width: 98.5vw;
+    height: 40vh;
+    background-color: antiquewhite;
+    z-index: -1;
+    margin-top: 5vh;
+    display: flex;
+  }
+
+  footer img {
+    width: 5vw;
+    height: auto;
+  }
+
+  footer .quick p {
+    margin-left: 3vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 3vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+  }
+
+  footer .quick a {
+    margin-left: 4vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 2vw;
+    color: black;
+    text-decoration: none;
+  }
+
+  footer .quick a:hover {
+    text-decoration: underline;
+  }
+  footer .contacts a {
+    position: relative;
+    left: 3vw;
+    top: 26vh;
+  }
+
+  footer p {
+    margin-left: 3vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 2vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+  }
+  footer .logo-pic {
+    position: relative;
+    width: 35vw;
+    height: 20vh;
+    margin-top: 10vh;
+    left: 5vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .location img {
+    width: 5vw;
+  }
+  .tag {
+    position: absolute;
+    top: 0vh;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .mySlides h4 {
+    font-size: 10vw;
+    text-align: center;
+    position: relative;
+    top: -12vh;
+    font-family: Bodoni MT;
+    color: black;
+  }
+  .mySlides p {
+    font-size: 7vw;
+    padding: 25vh 8vh 8vh 8vh;
+    position: relative;
+    top: -40vh;
+    z-index: -1;
+    font-family: Bodoni MT;
+    color: black;
+
+    background-color: antiquewhite;
+  }
+  .mySlides img {
+    position: relative;
+    top: -15vh;
+    width: 50vw;
+    height: auto;
+    margin-left: 23vw;
+  }
+  span {
+    color: #fd8606;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 4vw;
+    user-select: none;
+    border: black 1px solid;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+  }
+
+  .prev {
+    position: relative;
+    top: -50vh;
+    left: 38vw;
+  }
+  .next {
+    position: relative;
+    top: -50vh;
+    left: 40vw;
+  }
+
+  .location p {
+    font-family: Bodoni MT;
+    font-size: 8vw;
+    position: relative;
+    top: -40vh;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+  }
+  .location img {
+    width: 45px;
+    height: auto;
+    position: relative;
+    top: -40vh;
+  }
+  footer {
+    position: absolute;
+    top: 140vh;
+    width: 98.5vw;
+    height: 90vh;
+    background-color: antiquewhite;
+    z-index: -1;
+    margin-top: 5vh;
+  }
+
+  footer img {
+    width: 15vw;
+    height: auto;
+  }
+
+  footer .quick p {
+    margin-left: 25vw;
+    font-family: Bodoni MT;
+    font-size: 10vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+  }
+
+  footer .quick a {
+    margin-left: 35vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 8vw;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  footer .contacts a {
+    position: relative;
+    left: 25vw;
+    top: 32vh;
+  }
+
+  footer p {
+    margin-left: 13vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 7vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+  }
+  footer .logo-pic {
+    position: relative;
+    width: 55vw;
+    height: 7vh;
+
+    left: 20vw;
+    margin-top: 10vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo-container {
+    position: relative;
+    left: 60vw;
+  }
+  .logo-container img {
+    width: 20vw;
+    height: auto;
+  }
+  .alpaca {
+    font-size: 20vw;
+  }
+  .farm {
+    font-size: 8vw;
+  }
+  .nav-links {
+    position: relative;
+    width: 120%;
+    left: -135vw;
+    top: 25vh;
+  }
+  .nav-link {
+    font-size: 8.5vw;
+    margin-right: 40px;
+  }
+  .tag {
+    width: 100%;
+  }
+  .mySlides {
+    width: 90%;
+    margin-left: 70%;
+    margin-top: 15vh;
+    text-align: center;
+  }
+
+  .slider-frame {
+    visibility: hidden;
+  }
+
+  .mySlides p {
+    font-size: 12vw;
+  }
+  .mySlides h4 {
+    font-size: 15vw;
+  }
+
+  .buttons {
+    width: 100%;
+
+    margin-left: 95%;
+  }
+  .buttons a {
+    font-size: 10vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid black;
+  }
+  .location {
+    width: 100%;
+    margin-left: 65%;
+  }
+  .location p {
+    background-color: #f8f8f8;
+    font-size: 10vw;
+    margin: auto;
+  }
+  .location a img {
+    width: 20vw;
+    height: auto;
+    position: relative;
+    top: -15vh;
+    left: 70vw;
+  }
+  footer {
+    position: absolute;
+    top: 210vh;
+    width: 240%;
+    height: 90vh;
+    background-color: antiquewhite;
+    z-index: -1;
+    margin-top: 10vh;
+    border: black 2px solid;
+  }
+
+  footer img {
+    width: 15vw;
+    height: auto;
+  }
+
+  footer .quick p {
+    margin-left: 20vw;
+    font-family: Bodoni MT;
+    font-size: 10vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+  }
+
+  footer .quick a {
+    margin-left: 25vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 10vw;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  footer .contacts a {
+    position: relative;
+    left: 25vw;
+    top: 50vh;
+  }
+
+  footer p {
+    margin-left: 13vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 10vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+  }
+  footer .logo-pic {
+    position: relative;
+    width: 85vw;
+    height: 20vh;
+
+    left: -115vw;
+    margin-top: 70vh;
+  }
+}

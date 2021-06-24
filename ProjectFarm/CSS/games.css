@@ -1,0 +1,122 @@
+.tag {
+  width: 50vw;
+  margin-top: 4%;
+}
+
+.orange {
+  position: absolute;
+  width: 100%;
+  height: 50.5%;
+  background-color: #ffe1b2;
+}
+
+.where {
+  position: absolute;
+  z-index: 1;
+  top: -20vh;
+  border: 1px solid black;
+  width: 25vw;
+  height: 40vh;
+  margin-left: 5vw;
+}
+
+.where img {
+  width: 100%;
+  height: 100%;
+}
+
+.race {
+  position: absolute;
+
+  z-index: 1;
+  top: -20vh;
+  border: 1px solid black;
+  width: 25vw;
+  height: 40vh;
+  margin-left: 38vw;
+}
+.race img {
+  width: 100%;
+  height: 100%;
+}
+
+.flappy {
+  position: absolute;
+  z-index: 1;
+  top: -20vh;
+  border: 1px solid black;
+  width: 25vw;
+  height: 40vh;
+  margin-left: 70vw;
+}
+.flappy img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: black;
+  font-family: Bodoni MT;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  top: 99vh;
+  width: 98.5vw;
+  height: 40vh;
+  background-color: antiquewhite;
+  z-index: -1;
+
+  display: flex;
+}
+
+footer img {
+  width: 5vw;
+  height: auto;
+}
+
+footer .quick p {
+  margin-left: 3vw;
+  display: block;
+  font-family: Bodoni MT;
+  font-size: 3vw;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 3vh;
+}
+
+footer .quick a {
+  margin-left: 4vw;
+  display: block;
+  font-family: Bodoni MT;
+  font-size: 2vw;
+  color: black;
+  text-decoration: none;
+}
+
+footer .quick a:hover {
+  text-decoration: underline;
+}
+footer .contacts a {
+  position: relative;
+  left: 3vw;
+  top: 26vh;
+}
+
+footer p {
+  margin-left: 3vw;
+  display: block;
+  font-family: Bodoni MT;
+  font-size: 2vw;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 3vh;
+}
+footer .logo-pic {
+  position: relative;
+  width: 35vw;
+  height: 20vh;
+  margin-top: 10vh;
+  left: 5vw;
+}

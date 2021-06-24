@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="/CSS/NavBar.css">
+    <link rel="stylesheet" href="/CSS/AboutUs.css">
+    <link rel="stylesheet" href="/CSS/AboutUsResponsive.css">
+    <link rel="icon" href="/Photos/Icons/logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="/HTML/Home.html"><img src="/Photos/Icons/logo.png"></a>
+            <p class="alpaca">ALPACA</p>
+            <p class="farm">farms</p>
+
+        </div>
+        <img src="/Photos/Icons/toggle.png" id="toggle" onclick="menu()">
+        <nav>
+
+            <ul class="nav-links" id="menuList">
+                <li><a class="nav-link" id="list1" href="/HTML/Home.html">HOME</a>
+                </li>
+                <li><a class="nav-link" id="list2" href="/HTML/Articles.html">ARTICLES</a></li>
+                <li><a class="nav-link" href="/HTML/Games.html" id="game">GAMES</a></li>
+                <li><a class="nav-link" id="list3" href="/HTML/AboutUs.html" style="text-decoration: underline;">ABOUT
+                        US</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <img src="/Photos/Tags/aboutus.jpg" class="tag">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <div class="wrap">
+        <div class="slider">
+
+            <div class="item">
+                <img src="/Photos/AboutUsSlider/193214350_2598043107165724_7329601659111781920_n.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="/Photos/AboutUsSlider/193454525_1470533619951162_728173797080179902_n.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="/Photos/AboutUsSlider/195939938_910152182900146_8617363604110767419_n.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="/Photos/AboutUsSlider/pexels-gabriel-peter-710263.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="/Photos/AboutUsSlider/pexels-welton-souza-4613395.jpg" alt="">
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="text">
+        <h4><span>.our</span> farms</h4>
+        <p>Our farm welcomes everyone who want to make a new alpaca friend.
+            We are going to be more than happy to hear about your experience!Our farm welcomes everyon who want to make
+            a new alpaca friend.We hope to see you soon!</p>
+    </div>
+
+    <button id="myBtn">Contact Us</button>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <img src="/Photos/Icons/logo.png">
+            <a href="https://www.facebook.com/" target="_blank"><img src="/Photos/Icons/fb.png" class="fb"></a>
+            <a href="https://twitter.com/?lang=bg" target="_blabk"><img src="/Photos/Icons/twitter.png"
+                    class="twitter"></a>
+            <a href="https://github.com/"><img src="/Photos/Icons/GitHub-Mark.png" class="git" target="_blabk"></a>
+            <p class="alpaca">ALPACA</p>
+            <p class="farm">farms</p>
+            <span class="close">&times;</span>
+            <form action="https://formsubmit.co/alpaca.farm.uktc@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Name" class="name" required>
+                <input type="email" name="email" placeholder="Email" class="email" required>
+                <input type="text" name="question" placeholder="Type your question here" class="question" required>
+                <button type="submit" class="Send">Send</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="quick">
+            <p>Quick Links</p>
+            <a href="/HTML/Home.html">Home</a>
+            <a href="./Articles.html">Articles</a>
+            <a href="/HTML/Games.html">Games</a>
+            <a href="/HTML/AboutUs.html">About Us</a>
+        </div>
+
+        <div class="contacts">
+            <a href="https://www.facebook.com/" target="_blank"><img src="/Photos/Icons/fb.png" class="fb"></a>
+            <a href="https://twitter.com/?lang=bg" target="_blank"><img src="/Photos/Icons/twitter.png"
+                    class="twitter"></a>
+            <a href="https://github.com/"><img src="/Photos/Icons/GitHub-Mark.png" class="git" target="_blabk"></a>
+            <p>Tel: +359 0892 755 660</p>
+            <p>Email: alpaca.farm.uktc.gmail.com</p>
+
+        </div>
+
+
+        <img class="logo-pic" src="/Photos/Icons/LogoPic.png" alt="">
+
+    </footer>
+    <script src="/JavaScript/AboutSlider.js"></script>
+
+    <script>
+        const toggle = document.getElementById("toggle");
+        const links = document.getElementById("menuList");
+        const ul1 = document.getElementById("list1");
+        const ul2 = document.getElementById("list2");
+        const ul3 = document.getElementById("list3");
+        links.style.maxHeight = 0 + "px";
+        let h = 0;
+        function menu() {
+            if (h == 0) {
+                links.style.maxHeight = 50 + "vh";
+                ul1.style.visibility = "visible";
+                ul2.style.visibility = "visible";
+                ul3.style.visibility = "visible";
+                links.style.zIndex = "200";
+                h = 50;
+            } else {
+
+                links.style.maxHeight = 0 + "vh";
+                ul1.style.visibility = "hidden";
+                ul2.style.visibility = "hidden";
+                ul3.style.visibility = "hidden";
+                h = 0;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

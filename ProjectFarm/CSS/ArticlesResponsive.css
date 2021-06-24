@@ -1,0 +1,274 @@
+@media only screen and (max-width: 700px) {
+  .tag {
+    width: 100vw;
+    position: absolute;
+    top: -4vh;
+    z-index: -100;
+  }
+  .slider {
+    top: 15vh;
+  }
+  #toggle {
+    width: 10vw;
+    position: absolute;
+    margin-left: 60vw;
+    z-index: 10;
+  }
+  .item.slick-slide.slick-center {
+    transform: scale(0.84);
+    z-index: 3;
+  }
+  .slick-arrow {
+    font-size: 6vw;
+    padding-left: 2.5vw;
+    padding-right: 2vw;
+  }
+  .slick-prev {
+    left: -45px;
+  }
+
+  .slick-next {
+    right: -45px;
+  }
+  .wrap {
+    top: -20vh;
+  }
+
+  .item h5 {
+    font-size: 15vw;
+  }
+  .item.slick-slide.slick-center a {
+    margin-left: 25%;
+    font-size: 10vw;
+  }
+  .text {
+    position: relative;
+    top: -30vh;
+    text-align: center;
+    margin: 0;
+    font-size: 14vw;
+  }
+  footer {
+    position: absolute;
+    display: block;
+    top: 140vh;
+    width: 98.5vw;
+    height: 90vh;
+    background-color: antiquewhite;
+    z-index: -1;
+    margin-top: 5vh;
+  }
+
+  footer img {
+    width: 15vw;
+    height: auto;
+  }
+
+  footer .quick p {
+    margin-left: 25vw;
+    font-family: Bodoni MT;
+    font-size: 10vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+  }
+
+  footer .quick a {
+    margin-left: 35vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 8vw;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  footer .contacts a {
+    position: relative;
+    left: 25vw;
+    top: 32vh;
+  }
+
+  footer p {
+    margin-left: 13vw;
+    font-family: Bodoni MT;
+    font-size: 7vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+  }
+  footer .logo-pic {
+    position: relative;
+    width: 55vw;
+    height: 7vh;
+
+    left: 20vw;
+    margin-top: 15vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo-container {
+    position: relative;
+    left: 78vw;
+  }
+  .logo-container img {
+    width: 20vw;
+    height: auto;
+  }
+  .alpaca {
+    font-size: 20vw;
+  }
+  .farm {
+    font-size: 8vw;
+  }
+  .nav-links {
+    position: relative;
+    width: 120%;
+    left: -120vw;
+    top: 25vh;
+  }
+  .nav-link {
+    font-size: 8.5vw;
+    margin-right: 40px;
+  }
+  .tag {
+    width: 100%;
+  }
+
+  .slider {
+    max-width: 220vw;
+  }
+
+  .item.slick-slide {
+    width: 650px;
+    height: 75vh !important;
+    transition: transform 0.4s;
+    position: relative;
+    margin-left: 80px;
+  }
+
+  .item.slick-slide {
+    transform: scale(0.7) translate(340px);
+  }
+
+  .item.slick-slide.slick-center + .slick-slide {
+    transform: scale(0.8) translate(-180px);
+    z-index: 10;
+  }
+
+  .item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
+    transform: scale(0.7) translate(-340px);
+    z-index: 5;
+  }
+  .item.slick-slide.slick-center {
+    transform: scale(0.9);
+    z-index: 3;
+  }
+  .slick-arrow {
+    font-size: 6vw;
+    padding-left: 2.5vw;
+    padding-right: 2vw;
+  }
+
+  .slick-prev {
+    left: -45px;
+    font-size: 15vw;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: black 8px solid;
+  }
+
+  .slick-next {
+    right: -45px;
+    font-size: 15vw;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: black 8px solid;
+  }
+  .wrap {
+    top: 40vh;
+    left: 30vw;
+    width: 200vw;
+  }
+
+  .item h5 {
+    font-size: 15vw;
+  }
+  .item.slick-slide.slick-center a {
+    margin-left: 30%;
+    font-size: 10vw;
+    top: 590px;
+  }
+
+  .text {
+    width: 90%;
+    position: relative;
+    top: 40vh;
+    font-size: 15vw;
+    display: flex;
+    text-align: center;
+    left: 55vw;
+  }
+
+  footer {
+    position: absolute;
+    top: 210vh;
+    width: 270%;
+    height: 90vh;
+    background-color: antiquewhite;
+    z-index: -1;
+    margin-top: 10vh;
+    border: black 2px solid;
+  }
+
+  footer img {
+    width: 20vw;
+    height: auto;
+  }
+
+  footer .quick p {
+    margin-left: 20vw;
+    font-family: Bodoni MT;
+    font-size: 10vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+  }
+
+  footer .quick a {
+    margin-left: 25vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 10vw;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  footer .contacts a {
+    position: relative;
+    left: 25vw;
+    top: 50vh;
+  }
+
+  footer .contacts p {
+    position: relative;
+    margin-left: 30vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 13vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+    top: -15vh;
+  }
+  footer .logo-pic {
+    position: relative;
+    width: 85vw;
+    height: 20vh;
+
+    left: -165vw;
+    margin-top: 70vh;
+  }
+}

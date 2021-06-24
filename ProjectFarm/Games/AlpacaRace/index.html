@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlpacaRace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="restart()">
+
+
+    <div id="container">
+        <div class="section">
+            <div id="green"><img src="/Games/AlpacaRace/green.png"></div>
+
+        </div>
+        <div class="section">
+            <div id="blue"><img src="/Games/AlpacaRace/blue.png"></div>
+        </div>
+        <div class="section">
+            <div id="yellow"><img src="/Games/AlpacaRace/yellow.png"></div>
+        </div>
+        <div class="finish"></div>
+    </div>
+
+    <div class="bet">
+        <div class="buttons">
+            <p><button onclick="myMove()">Start Race</button></p>
+            <p><button onclick="NewLoop()">New Loop</button></p>
+            <p><button onclick="restart()">Restart</button></p>
+        </div>
+
+
+
+        <p id="balance"></p>
+
+        <div class="makeBet">
+            <label>Bet Amount $</label>
+            <input onfocus="this.value=''" id="amount" />
+        </div>
+
+        <div class="getAlpaca">
+            <label>Choose an alpaca to bet on</label>
+            <select id="BetAlpaca">
+                <option value="1">Green</option>
+                <option value="2">Blue</option>
+                <option value="3">Yellow</option>
+
+            </select>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="/Games/AlpacaRace/script.js"></script>
+
+
+
+</body>
+
+</html>

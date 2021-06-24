@@ -1,0 +1,364 @@
+.tag {
+  width: 55vw;
+}
+
+.nav-links {
+  position: relative;
+  display: flex;
+  width: 37vw;
+  list-style: none;
+  left: -45vw;
+  margin-top: 7%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  margin-left: 4vw;
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  padding: 0 60px;
+  top: -40vh;
+  display: block;
+}
+
+.wrap:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider {
+  position: relative;
+  z-index: 50;
+  padding: 0 0px;
+  margin: 5rem auto;
+  max-width: 70vw;
+  width: 100%;
+}
+
+.slick-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 0.5vw;
+  padding-top: 0.5vw;
+  font-weight: bold;
+  font-size: 2vw;
+  user-select: none;
+  border: black 3px solid;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+.slick-arrow:hover {
+  border: #fd8606 3px solid;
+  color: #fd8606;
+}
+
+.slick-prev {
+  left: -100px;
+  text-align: left;
+}
+
+.slick-next {
+  right: -100px;
+  text-align: right;
+}
+
+.item.slick-slide {
+  width: 410px;
+  height: 55vh !important;
+  transition: transform 0.4s;
+  position: relative;
+}
+
+.slick-slide:after {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transition: transform 0.4s;
+}
+
+.item.slick-slide.slick-center + .slick-slide {
+  transform: scale(0.7) translate(-100px);
+  z-index: 10;
+}
+
+.item.slick-slide.slick-active {
+  transform: scale(0.7) translate(100px);
+}
+
+.item.slick-slide.slick-center {
+  /* margin: 0 -10%; */
+  transform: scale(0.8);
+  z-index: 30;
+}
+
+.slick-center:after {
+  opacity: 0;
+}
+
+.text {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 20%;
+  max-width: 60vw;
+}
+
+.text h4 {
+  font-size: 4vw;
+  font-family: Bodoni MT;
+  color: black;
+}
+
+.text span {
+  color: #fd8606;
+}
+
+.text p {
+  font-size: 2vw;
+  font-family: Bodoni MT;
+  color: black;
+}
+
+#myBtn {
+  margin-bottom: 50px;
+  font-family: Bodoni MT;
+  text-decoration: none;
+  font-size: 2vw;
+  font-weight: 600;
+  color: black;
+  background-color: #fd8606;
+  cursor: pointer;
+  border-radius: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  left: 45%;
+  top: 98%;
+  border: #fd8606 3px solid;
+  margin-bottom: 10px;
+}
+
+#myBtn:hover {
+  background-color: white;
+  border: #fd8606 3px solid;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  padding-top: 20px;
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 30%;
+  height: 95%;
+  margin-bottom: 20px;
+}
+.modal-content img {
+  position: relative;
+  width: 4vw;
+  height: 10vh;
+  left: 6%;
+}
+.modal-content .alpaca {
+  position: relative;
+  font-size: 5vw;
+  font-family: Bodoni MT;
+  top: -12vh;
+  left: 6vw;
+}
+.modal-content .farm {
+  position: relative;
+  font-size: 3vw;
+  font-family: Bodoni MT;
+  color: #fd8606;
+  top: -27vh;
+  left: 23vw;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  color: #aaaaaa;
+  float: right;
+  font-size: 3vw;
+  font-weight: bold;
+  top: 20vh;
+  right: 35vw;
+  margin-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content input {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 15%;
+  width: 70%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: black 2px solid;
+  border-radius: 4px;
+  font-family: Bodoni MT;
+  font-size: 1.5vw;
+  top: -25vh;
+}
+
+.modal-content input:hover {
+  border: #fd8606 2px solid;
+}
+
+.modal-content .Send {
+  margin-bottom: 50px;
+  font-family: Bodoni MT;
+  text-decoration: none;
+  font-size: 2vw;
+  font-weight: 600;
+  color: black;
+  background-color: #fd8606;
+  cursor: pointer;
+  border-radius: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  left: 46.5%;
+  border: #fd8606 2px solid;
+  top: 69%;
+}
+
+.modal-content .Send:hover {
+  background-color: white;
+  border: #fd8606 2px solid;
+}
+
+.modal-content .fb {
+  top: 78%;
+  left: -1vw;
+  width: 5vw;
+}
+
+.modal-content .twitter {
+  top: 77.5%;
+  margin-left: 1vw;
+  width: 5vw;
+}
+
+.modal-content .git {
+  top: 77.5%;
+  margin-left: 2.5vw;
+  width: 5.4vw;
+}
+footer {
+  position: absolute;
+  top: 110vh;
+  width: 98.5vw;
+  height: 40vh;
+  background-color: antiquewhite;
+  z-index: -1;
+
+  display: flex;
+}
+
+footer img {
+  width: 5vw;
+  height: auto;
+}
+
+footer .quick p {
+  margin-left: 3vw;
+  display: block;
+  font-family: Bodoni MT;
+  font-size: 3vw;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 3vh;
+}
+
+footer .quick a {
+  margin-left: 4vw;
+  display: block;
+  font-family: Bodoni MT;
+  font-size: 2vw;
+  color: black;
+  text-decoration: none;
+}
+
+footer .quick a:hover {
+  text-decoration: underline;
+}
+footer .contacts a {
+  position: relative;
+  left: 3vw;
+  top: 26vh;
+}
+
+footer p {
+  margin-left: 3vw;
+  display: block;
+  font-family: Bodoni MT;
+  font-size: 2vw;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 3vh;
+}
+footer .logo-pic {
+  position: relative;
+  width: 35vw;
+  height: 20vh;
+  margin-top: 10vh;
+  left: 5vw;
+}

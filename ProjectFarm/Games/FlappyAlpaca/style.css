@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(223, 234, 241);
+}
+#game {
+  position: relative;
+  background-color: rgb(192, 232, 233);
+  top: 20px;
+  width: 400px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+  overflow: hidden;
+}
+#block {
+  width: 50px;
+  height: 500px;
+  background-image: url("./istockphoto-582304964-612x612.jpg");
+  position: relative;
+  left: 400px;
+  animation: block 2s infinite linear;
+}
+@keyframes block {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: -50px;
+  }
+}
+#hole {
+  width: 50px;
+  height: 170px;
+  background-color: rgb(192, 232, 233);
+  position: relative;
+  left: 400px;
+  top: -500px;
+  animation: block 2s infinite linear;
+}
+#character {
+  width: 40px;
+  height: 50px;
+  background-image: url("./alpaca.jpg");
+  background-size: 40px 50px;
+  position: absolute;
+  top: 100px;
+}
+
+#score {
+  position: relative;
+  left: 200px;
+  top: 300px;
+}

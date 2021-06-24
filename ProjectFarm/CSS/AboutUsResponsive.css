@@ -1,0 +1,301 @@
+@media only screen and (max-width: 700px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  #toggle {
+    width: 10vw;
+    position: absolute;
+    margin-left: 60vw;
+    z-index: 10;
+  }
+  #game {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+    list-style: none;
+    background-color: rgb(255, 190, 106);
+    height: 50vh;
+    width: 50vw;
+    left: 30%;
+    margin-top: 10px;
+    z-index: 1;
+  }
+
+  .nav-link {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    font-size: 7vw;
+    visibility: hidden;
+  }
+  .nav-links li {
+    margin-top: 10vh;
+  }
+  #list1 {
+    position: relative;
+    top: -10px;
+    left: 40px;
+  }
+
+  #list2 {
+    position: relative;
+    top: 70px;
+    left: -70px;
+  }
+  #list3 {
+    position: relative;
+    top: 170px;
+    left: -190px;
+  }
+  .item.slick-slide.slick-center {
+    transform: scale(0.5);
+    z-index: 3;
+  }
+  .slick-arrow {
+    font-size: 6vw;
+    padding-left: 2.5vw;
+    padding-right: 2vw;
+  }
+  .slick-prev {
+    left: -45px;
+  }
+
+  .slick-next {
+    right: -45px;
+  }
+  .wrap {
+    top: -20vh;
+  }
+  .tag {
+    width: 100vw;
+    position: absolute;
+    top: -4vh;
+    z-index: -10;
+  }
+
+  .text h4 {
+    position: relative;
+    font-size: 10vw;
+    top: -15vh;
+  }
+  .text p {
+    position: relative;
+    font-size: 8vw;
+    top: -15vh;
+  }
+  #myBtn {
+    visibility: hidden;
+  }
+
+  footer {
+    position: absolute;
+    display: block;
+    top: 140vh;
+    width: 98.5vw;
+    height: 90vh;
+    background-color: antiquewhite;
+    z-index: -1;
+    margin-top: 5vh;
+  }
+
+  footer img {
+    width: 15vw;
+    height: auto;
+  }
+
+  footer .quick p {
+    margin-left: 25vw;
+    font-family: Bodoni MT;
+    font-size: 10vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+  }
+
+  footer .quick a {
+    margin-left: 35vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 8vw;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  footer .contacts a {
+    position: relative;
+    left: 25vw;
+    top: 32vh;
+  }
+
+  footer p {
+    margin-left: 13vw;
+
+    font-family: Bodoni MT;
+    font-size: 7vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+  }
+  footer .logo-pic {
+    position: relative;
+    width: 55vw;
+    height: 7vh;
+
+    left: 20vw;
+    margin-top: 15vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo-container {
+    position: relative;
+    left: 78vw;
+  }
+  .logo-container img {
+    width: 20vw;
+    height: auto;
+  }
+  .alpaca {
+    font-size: 20vw;
+  }
+  .farm {
+    font-size: 8vw;
+  }
+  .nav-links {
+    position: relative;
+    width: 120%;
+    left: -170vw;
+    top: 25vh;
+  }
+  .nav-link {
+    font-size: 8.5vw;
+    margin-right: 40px;
+  }
+  #myBtn {
+    visibility: hidden;
+  }
+  .slider {
+    max-width: 220vw;
+    width: 200vw;
+    max-height: 100vh;
+    height: 100vh;
+    position: relative;
+    left: -400px;
+    top: -100px;
+  }
+  .item.slick-slide.slick-center {
+    transform: scale(0.8);
+    z-index: 3;
+  }
+
+  .slick-prev {
+    left: -45px;
+    font-size: 10vh;
+    padding-left: 2.5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border: black 6px solid;
+  }
+
+  .slick-next {
+    right: -45px;
+    font-size: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border: black 6px solid;
+  }
+  .wrap {
+    top: 60vh;
+    right: -80vw;
+  }
+  .tag {
+    width: 100vw;
+    position: absolute;
+    top: -4vh;
+    z-index: -10;
+  }
+
+  .text {
+    position: relative;
+    top: 170vw;
+    left: 100vw;
+  }
+  .text h4 {
+    font-size: 13vw;
+  }
+  .text p {
+    font-size: 10vw;
+  }
+  .item.slick-slide {
+    width: 200vw;
+    height: 100vh !important;
+    transition: transform 0.4s;
+    position: relative;
+    margin-left: 80px;
+  }
+
+  footer {
+    position: absolute;
+    top: 355vh;
+    width: 270%;
+    height: 90vh;
+    background-color: antiquewhite;
+    z-index: -1;
+    margin-top: 10vh;
+    border: black 2px solid;
+  }
+
+  footer img {
+    width: 20vw;
+    height: auto;
+  }
+
+  footer .quick p {
+    margin-left: 20vw;
+    font-family: Bodoni MT;
+    font-size: 10vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+  }
+
+  footer .quick a {
+    margin-left: 25vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 10vw;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  footer .contacts a {
+    position: relative;
+    left: 25vw;
+    top: 50vh;
+  }
+
+  footer .contacts p {
+    position: relative;
+    margin-left: 30vw;
+    display: block;
+    font-family: Bodoni MT;
+    font-size: 13vw;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 3vh;
+    top: -15vh;
+  }
+  footer .logo-pic {
+    position: relative;
+    width: 85vw;
+    height: 20vh;
+
+    left: -165vw;
+    margin-top: 70vh;
+  }
+}
